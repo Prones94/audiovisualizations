@@ -3,11 +3,11 @@
 // Draw some bars in a rainbow
 
 /**
- * 
- * @param {UINT8 Array} frequencyArray 
- * @param {canvas context} ctx 
- * @param {number} width 
- * @param {number} height 
+ *
+ * @param {UINT8 Array} frequencyArray
+ * @param {canvas context} ctx
+ * @param {number} width
+ * @param {number} height
  */
 
 function render(frequencyArray, ctx, width, height) {
@@ -17,11 +17,11 @@ function render(frequencyArray, ctx, width, height) {
 	ctx.fill()
 
 	// calculate the number of lines and the step between each line
-	const bars = frequencyArray.length 
+	const bars = frequencyArray.length
 	const step = width / bars
 	const colorStep = 360 / bars
 
-	ctx.lineWidth = 3
+	ctx.lineWidth = 5
 
 	// Draw each bar in a color based on frequency
 	// Draws bars vertically like a graph
